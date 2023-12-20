@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_IssueScrollViewPosition.MainPage">
+    <Grid RowDefinitions="*,*">
+        <ScrollView x:Name="svTest" Grid.Row="0" Orientation="Both" Scrolled="svTest_Scrolled">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Red" />
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Orange" />
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Yellow" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Green" />
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Blue" />
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Purple" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Pink" />
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="Salmon" />
+                    <Grid WidthRequest="200" HeightRequest="200" BackgroundColor="LightYellow" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <Editor Grid.Row="1" x:Name="txtPosition" VerticalOptions="Fill" HorizontalOptions="Fill">
+            
+        </Editor>
+
+    </Grid>
+    
+</ContentPage>
